@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script src="/js/tweet.js">                        
+</script>
+
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+<h1 id="fb-welcome"></h1>
+
+<div id="status">
+</div>
+Hit Enter
+<input type="text" placeholder="enter in text" id="message_text"/>
+<input type="button" value="enter" onclick="testMessageCreate();"/>
+<br><br>
+
+<div id="theText"></div>
+
+</body>
+</html>

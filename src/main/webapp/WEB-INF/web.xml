@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+  <servlet>
+    <servlet-name>HelloAppEngine</servlet-name>
+    <servlet-class>com.neel.servlet.HelloAppEngine</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloAppEngine</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TweetServlet</servlet-name>
+    <servlet-class>com.neel.servlet.TweetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TweetServlet</servlet-name>
+    <url-pattern>/tweet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetTweetServlet</servlet-name>
+    <servlet-class>com.neel.servlet.GetTweetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetTweetServlet</servlet-name>
+    <url-pattern>/gettweet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>DeleteTweetServlet</servlet-name>
+    <servlet-class>com.neel.servlet.DeleteTweetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteTweetServlet</servlet-name>
+    <url-pattern>/deletetweet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DisplayTweetServlet</servlet-name>
+    <servlet-class>com.neel.servlet.DisplayTweetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayTweetServlet</servlet-name>
+    <url-pattern>/displaytweet</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>tweet.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
